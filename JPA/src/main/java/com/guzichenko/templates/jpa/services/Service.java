@@ -1,13 +1,14 @@
 package com.guzichenko.templates.jpa.services;
 
-import com.guzichenko.templates.jpa.dao.ContactDao;
-import com.guzichenko.templates.jpa.entities.Contact;
+import java.util.Collection;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collection;
-import java.util.List;
+import com.guzichenko.templates.jpa.dao.ContactDao;
+import com.guzichenko.templates.jpa.entities.Contact;
 
 
 /**
@@ -34,6 +35,5 @@ public class Service {
     @Transactional(readOnly = true)
     public List<Contact> listAll() {
         return contactDao.findAll();
-
     }
 }

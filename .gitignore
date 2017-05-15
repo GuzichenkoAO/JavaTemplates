@@ -1,15 +1,19 @@
 # Compiled class file
-*.class
+#*.class 		- uncomment if needed
 
 # Log file
 *.log
 
-.idea
 *.iml
 
+# Folders
+.idea
+idea/*
+target
+target/*
 
 # Package Files #
-*.jar
+#*.jar 			- uncomment if needed
 *.war
 *.ear
 *.zip
