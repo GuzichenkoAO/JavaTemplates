@@ -21,21 +21,21 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
-package com.guzichenko.templates.hibernate;
+package com.guzichenko.templates.hibernate.entities;
 
 import java.util.Date;
 
-public class Event {
+public class MappedEvent {
 	private Long id;
 
 	private String title;
 	private Date date;
 
-	public Event() {
+	public MappedEvent() {
 		// this form used by Hibernate
 	}
 
-	public Event(String title, Date date) {
+	public MappedEvent(String title, Date date) {
 		// for application use, to create new events
 		this.title = title;
 		this.date = date;
