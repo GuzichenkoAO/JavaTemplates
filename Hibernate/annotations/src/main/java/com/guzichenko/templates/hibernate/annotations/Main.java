@@ -1,4 +1,4 @@
-package com.guzichenko.templates.hibernate;
+package com.guzichenko.templates.hibernate.annotations;
 
 import java.util.Date;
 import java.util.List;
@@ -10,16 +10,17 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import com.guzichenko.templates.hibernate.entities.MappedEvent;
+import com.guzichenko.templates.hibernate.annotations.entities.MappedEvent;
 
 /**
  * @author - Guzichenko Artem.
  */
 public class Main {
-
 	private static final Logger LOGGER = Logger.getLogger(Main.class);
 
 	public static void main(String[] args) {
+
+
 
 		StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
 				.configure() // configures settings from hibernate.cfg.xml
@@ -32,7 +33,6 @@ public class Main {
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		session.save(new MappedEvent("Our very first event!", new Date()));
-		session.save(new MappedEvent("A follow up event", new Date()));
 		session.getTransaction().commit();
 		// close the session (physical connection to database)
 		session.close();
@@ -50,7 +50,5 @@ public class Main {
 
 		// destroy session factory
 		sessionFactory.close();
-
 	}
 }
-

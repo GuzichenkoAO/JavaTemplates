@@ -12,7 +12,7 @@
 
 <hibernate-mapping package="com.guzichenko.templates.hibernate">
 
-    <class name="com.guzichenko.templates.hibernate.entities.MappedEvent" table="EVENTS">
+    <class name="com.guzichenko.templates.hibernate.basic.entities.MappedEvent" table="EVENTS">
         <id name="id" column="EVENT_ID">
             <generator class="increment"/>
         </id>

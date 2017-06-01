@@ -12,6 +12,7 @@
 	<artifactId>hiber-core</artifactId>
 	<packaging>pom</packaging>
 	<modules>
+		<module>annotations</module>
 		<module>basic</module>
 	</modules>
 
