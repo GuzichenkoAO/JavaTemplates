@@ -13,6 +13,8 @@
 	<modules>
 		<module>Hibernate</module>
 		<module>JPA</module>
+		<module>Concurrency</module>
+		<module>RabbitMQ</module>
 	</modules>
 
 	<properties>

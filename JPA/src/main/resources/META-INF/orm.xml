@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm">
 
-	<sql-result-set-mapping name="ContacttDTOMapping">
+	<sql-result-set-mapping name="ContactDTOMapping">
 		<constructor-result target-class="com.guzichenko.templates.jpa.entities.Contact">
 			<column name="CLIENT_ID" class="java.lang.Integer"/>
 			<column name="CLIENT"/>
