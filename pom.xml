@@ -15,6 +15,7 @@
 		<module>JPA</module>
 		<module>Concurrency</module>
 		<module>RabbitMQ</module>
+		<module>Akka</module>
 	</modules>
 
 	<properties>
@@ -25,6 +26,7 @@
 		<hibernate.version>5.2.10.Final</hibernate.version>
 		<log4j.version>1.2.17</log4j.version>
 		<h2.version>1.4.195</h2.version>
+		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -81,7 +83,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>${maven.compile.source}</source>
 					<target>${maven.compile.target}</target>
