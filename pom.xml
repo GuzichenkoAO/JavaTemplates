@@ -16,6 +16,7 @@
 		<module>Concurrency</module>
 		<module>RabbitMQ</module>
 		<module>Akka</module>
+		<module>FIX</module>
 	</modules>
 
 	<properties>
